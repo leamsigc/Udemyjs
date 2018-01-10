@@ -1,5 +1,5 @@
 :root{
-    --mainBg: #F3EDE7;
+    --mainBg: #03A796;
 }
 
 *{
@@ -23,21 +23,25 @@ body{
     justify-content: center;
     align-items: center;
     
+    /*background: var(--mainBg);*/
     background: var(--mainBg);
-    
 }
 
 
 input{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",Helvetica,sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1rem;
+    text-transform: uppercase;
     
     display: inline-block;
     padding: 10px 20px;
     background: #00515C;
     color:  #92B5BF;
     outline:none;
+    
+    border: 0;
+    letter-spacing: 4px;
     
     transition:all 0.5s ease-in-out;
     
