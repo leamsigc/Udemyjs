@@ -47,8 +47,6 @@ form{
     font-weight: 300;
     letter-spacing: 2px;
 }
-form div:first-child{
-}
 input[type='button']{
     background: var(--orange-color);
     padding: 1rem 2rem;
