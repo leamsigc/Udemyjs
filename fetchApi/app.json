@@ -1,0 +1,16 @@
+{
+  "data":[
+    {
+      "name":"ismael Garcia",
+      "position":"Web Developer"
+    },
+    {
+      "name":"Rafael Garcia",
+      "position":"CEO"
+    },
+    {
+      "name":"Jhon Doe",
+      "position":"General Manager"
+    }
+  ]
+}
