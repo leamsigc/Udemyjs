@@ -6,6 +6,7 @@ const btn3 = document.querySelector('#button3');
 const output = document.querySelector('#output');
 btn1.addEventListener('click',getText);
 btn2.addEventListener('click',getJson);
+btn3.addEventListener('click',getJsonGit);
 
 function getText(){
   //fetch the text file
@@ -19,7 +20,6 @@ function getText(){
 
 //get Json file
 function getJson(){
-  //fetch the text file
   fetch('app.json')
   .then(resp => resp.json())
   .then(resp => {
@@ -29,3 +29,18 @@ function getJson(){
     output.innerHTML = `<ul>${li.join('')}</ul>`;
   });
 };
+
+//get json file from github
+function getJsonGit(){
+  fetch('https://api.github.com/users')
+  .then(resp => resp.json())
+  .then(data => {
+    console.log(data);
+
+    const dataDisplay = data.map(item => {
+      return `<li>${item.login} <img src='${item.avatar_url}' width='200px' height='200-x' > </li>`
+    });
+
+    output.innerHTML = `<ul>${dataDisplay.join('')}</ul>`;
+  });
+}
