@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="weather_container">
+      <div class="weather_location"></div>
+      <div class="weather_condition"></div>
+      <div class="weather_grades"></div>
+      <div class="weather_icon"></div>
+      <div class="weather_details">
+        <ul>
+          <li>Relative Humidity: <span></span></li>
+          <li>73.8F (23 C)</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn_container">
+      <button id="btn_modal">Change Location</button>
+    </div>
+    <!-- modal  -->
+    <div id="modal" class="modal_container ">
+      <div class="modal">
+        <div id="close_btn" class="close">X</div>
+        <h1>Change Location</h1>
+        <form id='changeLocation'>
+          <div class="input_container">
+            <input type="text" placeholder="City ..." id="city">
+            <input type="text" placeholder="Country..." id="country">
+            <button id="btn_change">Change</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- script files  -->
+  <script src="./js/storage.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
