@@ -13,4 +13,9 @@ class Weather{
 
         return responseData;
     }
+
+    changeLocation(city,country){
+        this.state = country;
+        this.city = city;
+    }
 }

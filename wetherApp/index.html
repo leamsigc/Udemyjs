@@ -10,31 +10,31 @@
 <body>
   <div class="container">
     <div class="weather_container">
-      <div class="weather_location">Miami,FL</div>
-      <div class="weather_condition">Mostly Cloudy</div>
-      <div class="weather_grades">79.8F (26.6C)</div>
+      <div class="weather_location"></div>
+      <div class="weather_condition"></div>
+      <div class="weather_grades"></div>
       <div class="weather_icon"></div>
       <div class="weather_details">
         <ul>
           <li>Relative Humidity: <span></span></li>
-          <li>Dewpoint: 73.8F (23 C)</li>
-          <li>Feel Like: 84F (29 C)</li>
-          <li>Wind: from the SSE at 6.0 MPH</li>
+          <li>73.8F (23 C)</li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </div>
     <div class="btn_container">
-      <button>Change Location</button>
+      <button id="btn_modal">Change Location</button>
     </div>
     <!-- modal  -->
     <div id="modal" class="modal_container ">
       <div class="modal">
         <div id="close_btn" class="close">X</div>
         <h1>Change Location</h1>
-        <form #changeLocation>
+        <form id='changeLocation'>
           <div class="input_container">
-            <input type="text" placeholder="City ...">
-            <input type="text" placeholder="State...">
+            <input type="text" placeholder="City ..." id="city">
+            <input type="text" placeholder="Country..." id="country">
             <button id="btn_change">Change</button>
           </div>
         </form>
