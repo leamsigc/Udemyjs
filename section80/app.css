@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+h1{
+    margin-top: 2rem;
+    background: rgba(126, 38, 177, 0.979);
+    padding: 2rem;
+    color: rgb(193, 177, 196);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
